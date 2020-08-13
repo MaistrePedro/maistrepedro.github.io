@@ -1,4 +1,7 @@
 body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: 'Roboto', sans-serif;
     background-color: black;
     color: #006FE7
@@ -13,6 +16,7 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 25%;
 }
 
 .me-file-left  {
@@ -25,11 +29,23 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-.me-file-left-photo {
-    display: block;
+.me-file-left-top {
+    text-align: left;
+}
+
+@media screen and (max-width: 751px) {
+    .me-file-left-top {
+        text-align: center;
+    }
+}
+
+.me-file-left-photo {    
+    display: flex;
+    justify-content: center;
 }
 .me-file-left-photo img, .me-file-right-photo img {
-    width: 100%;
+    width: auto;
+    max-height: 40vh;
 }
 
 @media screen and (min-width: 751px) {
@@ -51,7 +67,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .me-file-left-links-item {
-    margin: 1rem;
+    margin: 2rem;
     font-size: 3rem;
     color: #fff;
 }

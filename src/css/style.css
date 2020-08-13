@@ -41,6 +41,8 @@ h1, h2, h3, h4, h5, h6 {
 .me-file-left-links-list {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     list-style: none;
     margin: 0;
     margin-block-start: 0;
@@ -49,14 +51,42 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .me-file-left-links-item {
+    margin: 1rem;
     font-size: 3rem;
-    padding: 1rem;
     color: #fff;
 }
 
-.me-file-left-links-item-tel {
+.me-file-links-item-tel {
+    padding: 1rem;
     color: #fff;
-    background-color: #04E000;
+    background-color: #2893E0;
+}
+
+.me-file-links-item-mail {
+    padding: 1rem;
+    color: #fff;
+    background-color: #2065F7;
+}
+
+.me-file-links-item-xtrem {
+    padding: 1rem;
+    background-color: #20D6F7;
+}
+
+.me-file-links-item-xtrem img {
+    width: 3rem;
+}
+
+.me-file-links-item-linkedin {
+    padding: 1rem;
+    color: #fff;
+    background-color: #1F2BED;
+}
+
+.me-file-links-item-github {
+    padding: 1rem;
+    color: #fff;
+    background-color: #1FEDD5;
 }
 
 .me-file-right {

@@ -1,5 +1,7 @@
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: black;
+    color: #006FE7
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -8,9 +10,62 @@ h1, h2, h3, h4, h5, h6 {
 
 .me-file {
     overflow-x: hidden;
-    max-height: 75vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.me-file-left  {
+    max-width: 50%;
+}
+
+@media screen and (max-width: 750px) {
+    .me-file-left {
+        max-width: 97.25%;
+    }
+}
+
+.me-file-left-photo {
+    display: block;
+}
+.me-file-left-photo img, .me-file-right-photo img {
+    width: 100%;
+}
+
+@media screen and (min-width: 751px) {
+    .me-file-left-photo {
+        display: none;
+    }
+}
+
+.me-file-left-links-list {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding: 0;
+}
+
+.me-file-left-links-item {
+    font-size: 3rem;
+    padding: 1rem;
+    color: #fff;
+}
+
+.me-file-left-links-item-tel {
+    color: #fff;
+    background-color: #04E000;
+}
+
+.me-file-right {
+    max-width: 50%;
+    display: block;
+}
+
+@media screen and (max-width:750px) {
+    .me-file-right {
+        display: none;
+    }
+}

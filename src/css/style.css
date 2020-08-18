@@ -69,39 +69,38 @@ h1, h2, h3, h4, h5, h6 {
 .me-file-left-links-item {
     margin: 2rem;
     font-size: 3rem;
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.me-file-left-links-item a {
     color: #fff;
 }
 
-.me-file-links-item-tel {
-    padding: 1rem;
-    color: #fff;
+.tel {
     background-color: #2893E0;
 }
 
-.me-file-links-item-mail {
-    padding: 1rem;
-    color: #fff;
+.mail {
     background-color: #2065F7;
 }
 
-.me-file-links-item-xtrem {
-    padding: 1rem;
+.xtrem {
     background-color: #20D6F7;
 }
 
-.me-file-links-item-xtrem img {
+.xtrem img {
     width: 3rem;
 }
 
-.me-file-links-item-linkedin {
-    padding: 1rem;
-    color: #fff;
+.linkedin {
     background-color: #1F2BED;
 }
 
-.me-file-links-item-github {
-    padding: 1rem;
-    color: #fff;
+.github {
     background-color: #1FEDD5;
 }
 
